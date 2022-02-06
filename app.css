@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #222;
+    height: 100vh;
+     
+    
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background: rgb(212, 86, 70);
+    margin: 200px auto;
+}
+.box-child {
+    position: relative;
+    width: 70%;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.element {
+    position: absolute;
+    width: 90%;
+    height: 6px;
+     left: 50%;
+     transform: translateX(-50%);
+    background: #000;
+    transition: transform 0.3s ease-in-out;
+}
+.element:nth-child(1) {
+    top: 0;
+}
+.element:nth-child(2) {
+    top: 18px;
+   
+    
+}
+
+.actived {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-60px);
+    opacity: 0;
+}
+.lasted {
+    transform: rotate(-130deg) ; 
+    transform-origin: bottom left;
+} 
+
+.element:nth-child(3) {
+    top:34px;
+    
+   
+}
+.animation {
+    transform: rotate(130deg);
+    transform-origin: 0 0;
+    top: 34px;
+
+}
